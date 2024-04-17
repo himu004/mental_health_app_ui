@@ -22,17 +22,35 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hi, Himu",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold
-                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Hi, Himu",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold
+                      ),
+                      ),
+                      SizedBox(height: 8,)
+                      Text("18 April, 2024",
+                      style: TextStyle(
+                        color: Colors.blue[100]
+                      ),
+                      ),
+                    ],
                   ),
                   // Notification
-                  Icon(
-                    Icons.notifications,
-                    color: Colors.white,
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue[600],
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Icon(
+                      Icons.notifications,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               )
