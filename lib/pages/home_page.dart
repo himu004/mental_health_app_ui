@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:mentalhealth_ui/pages/utils/emoticon_face.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -102,6 +103,88 @@ class _HomePageState extends State<HomePage> {
                     Icons.more_horiz,
                     color: Colors.white,
                     )
+                ],
+              ),
+
+              SizedBox(
+                height: 25,
+              ),
+              // Different face icons 
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  // bad
+                  Column(
+                    children: [
+                      EmoticonFace(
+                        emoticonFace: "😩",
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "BAD",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                        )
+                    ],
+                  ),
+                  // fine
+                  Column(
+                    children: [
+                      EmoticonFace(
+                        emoticonFace: "🙂",
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "FINE",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                        )
+                    ],
+                  ),
+                  // well
+                  Column(
+                    children: [
+                      EmoticonFace(
+                        emoticonFace: "😁",
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "WELL",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                        )
+                    ],
+                  ),
+                  // excellent
+                  Column(
+                    children: [
+                      EmoticonFace(
+                        emoticonFace: "😃",
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "EXCELLENT",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold
+                        ),
+                        )
+                    ],
+                  ),
                 ],
               )
             ],
