@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.all(25.0),
           child: Column(
             children: [
+              // Greetings Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -32,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold
                       ),
                       ),
-                      SizedBox(height: 8,)
+                      SizedBox(height: 8,),
                       Text("18 April, 2024",
                       style: TextStyle(
                         color: Colors.blue[100]
@@ -52,6 +53,55 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.white,
                     ),
                   )
+                ],
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              // Search Bar
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue[600],
+                  borderRadius: BorderRadius.circular(12)
+                ),
+                padding: EdgeInsets.all(12),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                        width: 10,
+                      ),
+                    Text(
+                      "Search",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              // How do you fell
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "How Do You Feel",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                    )
                 ],
               )
             ],
